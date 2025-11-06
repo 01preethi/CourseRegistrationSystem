@@ -1,0 +1,21 @@
+-- courseregistration.sql
+-- This file contains sample data for testing
+-- The tables are auto-created by Spring Boot JPA
+
+-- Create database
+CREATE DATABASE IF NOT EXISTS course_reg_sys;
+USE course_reg_sys;
+
+-- Insert sample data into auto-created tables
+
+INSERT INTO course (id, course_name, credits, instructor) VALUES
+(100, 'Java Basics', 4, 'Kathir'),
+(101, 'Python for ML', 5, 'Anu'),
+(102, 'Spring Boot', 8, 'Nila'),
+(111, 'AI', 5, 'Karthick');
+
+INSERT INTO course_registry (course_name, email_id, name) VALUES
+('Spring Boot', 'yazh@gmail.com', 'Yazhmitha');
+
+✅ No CREATE TABLE statements needed — Spring Boot will handle that automatically when the app runs.
+✅ This .sql file is just to provide sample data for developers or testers.

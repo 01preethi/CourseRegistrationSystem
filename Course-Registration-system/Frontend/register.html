@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Register a Course</title>
+        <style>
+            body{
+                background-color: #d4f1f8;
+                font-family: Arial, sans-serif;
+                text-align: center;}
+            form{
+                background-color: #ffffff;
+                margin: auto;
+                padding: 30px;
+                width: 400px;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
+            input,select{
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+                border: 1.8px solid #90e0ef;
+                border-radius: 6px;
+                font-size: 15px;
+                outline: none;}
+            input:focus,select:focus{
+                border-color: #0077b6;}
+            h1{
+                color: #0077b6;
+                margin-bottom: 30px;
+                font-size: 30px;
+                font-weight: bold; }
+            button{
+                width: 90%;
+                padding: 10px;
+                border: none;
+                background-color: #0077b6;
+                color: white;
+                font-weight: bold;
+                font-size: medium;
+                cursor: pointer;
+                margin-top: 5px;}
+            button:hover{
+                background-color: #023e8a;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Kickstart with exciting course</h1>
+        <form action="http://localhost:8080/courses/register" method="post">
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name"><br><br>
+            <label for="email">Enter your emailId: </label>
+            <input type="email" name="emailId"><br><br>
+            <label for="course">Choose your course: </label>
+            <select id="course" name="courseName">
+                <option value="java basics">java basics</option>
+                <option value="python for ML">python for ML</option>
+                <option value="spring boot">spring boot</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

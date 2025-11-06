@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Available courses</title>
+        <script type="text/javascript" src="coursescript.js"></script>
+
+        <style>
+           body {
+               background-color: #d4f1f8; 
+               font-family: Arial, sans-serif;
+               text-align: center;
+               padding: 50px;
+            }
+            h2 {
+               color: #0077b6; 
+               font-size: 26px;
+               margin-bottom: 25px;
+            }
+            table {
+               border-collapse: collapse;
+               width: 55%;
+               margin: 0 auto;
+               background-color: #ffffff;
+               box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            }
+            th, td {
+               border: 1px solid #90e0ef; 
+               text-align: center;
+               font-size: 15px;
+            }
+            th {
+                background-color: #0077b6; 
+                color: #ffffff;
+            }
+            tr:nth-child(even) {
+               background-color: #eaf6fb; 
+            }
+            tr:hover {
+               background-color: #caf0f8; 
+            }
+            h1{
+                color: #023e8a;
+                font-size: 30px;
+                margin-bottom: 25px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <table align="center" border="1">
+            <tr align="center" style="background-color: aliceblue;">
+            <th width="100">Course Id</th>
+            <th width="150">Course Name</th>
+            <th width="150">Trainer</th>
+            <th width="140">Duration In Weeks</th>
+            </tr>
+
+            <tbody align="center" id="coursetable"></tbody>
+        </table>
+
+        <script type="text/javascript">
+            window.onload = function(){
+                showCourses();
+            };
+        </script>
+    </body>
+</html>
