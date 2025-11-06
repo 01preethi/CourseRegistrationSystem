@@ -8,10 +8,15 @@ Built using Spring Boot (Backend), HTML, CSS, JavaScript (Frontend), and MySQL (
 File: backend/src/main/resources/application.properties
 
 spring.datasource.url=jdbc:mysql://localhost:3306/course_reg_sys
+
 spring.datasource.username=root
+
 spring.datasource.password=yourpassword
+
 spring.jpa.hibernate.ddl-auto=update
+
 spring.jpa.show-sql=true
+
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 
 🔍 Explanation
